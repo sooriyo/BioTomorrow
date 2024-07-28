@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>BioTomorrow</title>
+    <!--  CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+<body>
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="home.html" class="logo">BioTomorrow</a>
+                    <ul class="nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/images/course-video.mp4" type="video/mp4"/>
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="caption">
+                        <h6>BioTomorrow</h6>
+                        <h2>Unlock Your Future in Biology</h2>
+                        <p>Explore the diverse career paths in biology with BioTomorrow. Unlock opportunities, gain
+                            insights, and find your future in this dynamic field.</p>
+                        <div class="main-button-green">
+                            <div class="scroll-to-section"><a href="careers.html">Explore Career Paths</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-service-item owl-carousel" id="service-items">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const services = [
+        {
+            title: "Healthcare Careers",
+            description: "Explore rewarding careers in healthcare, from research and diagnostics to clinical practice and public health."
+        },
+        {
+            title: "Microbiology Opportunities",
+            description: "Dive into the world of microorganisms and contribute to advancements in medicine, agriculture, and environmental science."
+        },
+        {
+            title: "Biotechnology Innovation",
+            description: "Join the forefront of biotechnology, where you can develop groundbreaking technologies to improve health and sustainability."
+        },
+        {
+            title: "Advanced Studies",
+            description: "Continue your education in medical school or pursue specialized fields to further enhance your biology career prospects."
+        },
+        {
+            title: "Environmental Science",
+            description: "Work towards preserving natural habitats, studying ecosystems, and finding solutions to environmental challenges."
+        },
+        {
+            title: "Genetic Research",
+            description: "Investigate the secrets of DNA and genetics to advance our understanding of heredity and genetic disorders."
+        },
+        {
+            title: "Marine Biology",
+            description: "Study ocean ecosystems and marine life, contributing to conservation efforts and marine resource management."
+        },
+        {
+            title: "Pharmaceutical Development",
+            description: "Participate in the creation and testing of new drugs, improving treatments and healthcare outcomes globally."
+        },
+        {
+            title: "Wildlife Conservation",
+            description: "Protect endangered species and habitats, working to ensure the survival of wildlife for future generations."
+        }
+    ];
+
+    const container = document.getElementById('service-items');
+
+    services.forEach(service => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('item');
+
+        itemDiv.innerHTML = `
+
+            <div class="down-content">
+                <h4>${service.title}</h4>
+                <p>${service.description}</p>
+            </div>
+        `;
+
+        container.appendChild(itemDiv);
+    });
+</script>
+
+
+<section class="upcoming-meetings" id="meetings">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Careers Paths Biology</h2>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="categories">
+                    <h4>Meeting Categories</h4>
+                    <ul id="category-list">
+                    </ul>
+                    <div class="main-button-green">
+                        <a href="careers.html">See All Careers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row" id="job-items">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const categories = [
+        "Physician",
+        "Microbiologist",
+        "Forensic Scientist",
+        "Marine Biologist"
+    ];
+
+    const jobs = [
+        {
+            title: "Physician",
+            description: "The physician is commonly known as a medical doctor.",
+            image: "assets/images/careers/Physician.jpg",
+            link: "career-details.html?career=Physician"
+        },
+        {
+            title: "Microbiologist",
+            description: "A Microbiologist is a scientist studying microscopic organisms.",
+            image: "assets/images/careers/Microbiologist.jpg",
+            link: "career-details.html?career=Microbiologist"
+        },
+        {
+            title: "Forensic Scientist",
+            description: "A Forensic Scientist investigates crimes using scientific methods.",
+            image: "assets/images/careers/Forensic-Scientist.jpg",
+            link: "career-details.html?career=forensic-Scientist"
+        },
+        {
+            title: "Marine Biologist",
+            description: "A Marine Biologist studies ocean life and works to conserve marine ecosystems.",
+            image: "assets/images/careers/Marine-Biologist.jpg",
+            link: "career-details.html?career=marine-biologist"
+        }
+    ];
+
+    const categoryList = document.getElementById('category-list');
+    categories.forEach(category => {
+        const job = jobs.find(job => job.title === category);
+        if (job) {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = job.link;
+            a.textContent = category;
+            li.appendChild(a);
+            categoryList.appendChild(li);
+        }
+    });
+
+    const jobItemsContainer = document.getElementById('job-items');
+    jobs.forEach(job => {
+        const colDiv = document.createElement('div');
+        colDiv.classList.add('col-lg-6');
+
+        const jobItemDiv = document.createElement('div');
+        jobItemDiv.classList.add('job-item');
+
+        const thumbDiv = document.createElement('div');
+        thumbDiv.classList.add('thumb');
+
+        const priceDiv = document.createElement('div');
+        priceDiv.classList.add('price');
+        priceDiv.innerHTML = `<span>${job.title}</span>`;
+
+        const link = document.createElement('a');
+        link.href = job.link;
+        const img = document.createElement('img');
+        img.src = job.image;
+        img.alt = job.title;
+        link.appendChild(img);
+
+        thumbDiv.appendChild(priceDiv);
+        thumbDiv.appendChild(link);
+
+        const downContentDiv = document.createElement('div');
+        downContentDiv.classList.add('down-content');
+        downContentDiv.innerHTML = `<p>${job.description}</p>`;
+
+        jobItemDiv.appendChild(thumbDiv);
+        jobItemDiv.appendChild(downContentDiv);
+
+        colDiv.appendChild(jobItemDiv);
+
+        jobItemsContainer.appendChild(colDiv);
+    });
+</script>
+
+
+
+<section class="apply-now" id="apply">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="item">
+                            <h3>Feedbacks</h3>
+                            <h4>Jinadasa Bandara</h4>
+                            <p>Medical Doctor | Lecturer</p>
+
+                            <p>" This website is a valuable resource for biology students and professionals, offering an overview of emerging career paths like bioinformatics and nanotechnology. It includes real-life testimonials and interviews, making it more informative. It provides detailed descriptions of various professions, extending beyond traditional roles, reflecting the field's continuous evolution with technological advancements. "</p>
+                        </div>
+                        <div class="item">
+                            <h4>Halireena Rushdiha Mohomed</h4>
+                            <p>Undergraduate | Bsc(Hons) in Biotechnology</p>
+
+                            <p>" I found this website to be very insightful and helpful for me as I was quite puzzled in
+                                what careers I should expect in the field of Biology. "</p>
+                        </div>
+                        <div class="item">
+                        <h4>Dinithi Kulathunga</h4>
+                        <p>High School Student</p>
+
+                        <p>" Through this website, I was able to find out about newer career pathways that I was not aware of.
+                            It helped me to understand how biology is interconnected with other fields of science such as technology and engineering. "</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <video loop controls id="feedbackVideo">
+                    <source src="assets/images/feedback1.mp4" type="video/mp4"/>
+                </video>
+<!--                <div class="accordions is-first-expanded">-->
+<!--                    <video autoplay controls id="feedbackVideo">-->
+<!--                        <source src="assets/images/feedback1.mp4" type="video/mp4"/>-->
+<!--                    </video>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('feedbackVideo');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }, options);
+
+        observer.observe(video);
+    });
+</script>
+
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/slick-slider.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
